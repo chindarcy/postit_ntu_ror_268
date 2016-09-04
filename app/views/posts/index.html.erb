@@ -1,0 +1,10 @@
+<h1>Test</h1>
+
+<% @posts.each do |post|%>
+<div>
+	<p><%= post.content %></p>
+	<span>
+		<%= link_to "show post", post_path(post)%>
+	</span>
+</div>
+<%end%>
